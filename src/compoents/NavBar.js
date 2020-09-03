@@ -1,8 +1,5 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     NavLink
   } from "react-router-dom";
 
@@ -16,8 +13,9 @@ const NavBar = () => {
                 <NavLink 
                     className="Nav_link"
                     activeClassName="activeRoute"
+                    exact={true}
                     activeStyle={{fontWeight: 'bold'}}
-                    to="/Homepage" >Home</NavLink>
+                    to="/" >Home</NavLink>
             </li>
 
             <li>
@@ -25,7 +23,7 @@ const NavBar = () => {
                 className="Nav_link"
                 activeClassName="activeRoute"
                 activeStyle={{ fontWeight: 'bold' }}
-                to="/AboutPage">
+                to="/about">
                 About</NavLink>
                 </li>
 
@@ -34,7 +32,7 @@ const NavBar = () => {
                 className="Nav_link"
                 activeClassName="activeRoute"
                 activeStyle={{ fontWeight: 'bold' }}
-                to="/DiscoverMoviesPage">
+                to="/discover">
                     Discover Movies Page</NavLink>
             </li>
 
