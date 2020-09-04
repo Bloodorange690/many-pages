@@ -14,7 +14,7 @@ const NavBar = () => {
                     className="Nav_link"
                     activeClassName="activeRoute"
                     exact={true}
-                    activeStyle={{fontWeight: 'bold'}}
+                    activeStyle={{fontWeight: 'bold', }}
                     to="/" >Home</NavLink>
             </li>
 
@@ -37,9 +37,7 @@ const NavBar = () => {
             </li>
 
         </ul>
-        </nav>
-        <h1>Heeeeey</h1>
-     
+        </nav>     
     </div>;
   };
   

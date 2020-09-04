@@ -1,6 +1,6 @@
 import React from "react";
 const AboutPage = () => {
-  return <div>My page
+  return <div>Not my page
   </div>;
 };
 
